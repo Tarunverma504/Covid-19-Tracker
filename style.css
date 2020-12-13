@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Playfair+Display:ital,wght@1,700;1,800&display=swap');
+*{
+    
+    left:0;
+    right:0;
+    top:0;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0; 
+}
+body{
+    background-color:#191919;
+    width:100%;
+    
+}
+.header{
+    display:flex;
+	flex-direction:column;
+	justify-content:center;
+    align-items:center;
+    background-color:black;
+    width:100%;
+}
+.header h1{
+    color:white;/*
+    font-family: 'Playfair Display', serif;*/
+    font-family: 'Montserrat', sans-serif;
+    border-bottom:2px solid white;
+    font-size:50px;
+    opacity:0.7;
+}
+.searchbox{
+    
+    display:flex;
+    padding: 30px 30px 3px 30px;
+    margin:auto;
+    align-items: center;
+    background-color:transparent;
+    width:40%;
+    height:auto;
+}
+
+.search{
+    outline: none;
+    border:none;
+    margin:auto;
+    padding:10px;
+    background-color:lightgray;
+    display:flex;
+    border-radius:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchtag{
+border:none;
+outline: none;
+width:200px;
+height:35px;
+background-color: lightgray;
+text-align:center;
+}
+
+ul{
+    cursor:pointer;
+    color:black;
+    
+    
+}
+
+
+.res{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position:absolute;
+    top:240px;
+    z-index:2;
+}
+#result{
+
+    background-color:lightgray;
+    width:10%;
+    border-radius:15px;
+    overflow:auto;
+    margin:auto;
+    align-items: center;
+    padding: 30px 30px 3px 30px;
+    visibility:hidden;
+    
+}
+.card{
+    width:21%;
+    padding:40px;
+    margin:10px 30px 10px 30px;
+    background-color: orange;
+    border-radius:30px;
+    
+}
+
+
+.cardbox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:3%;
+}
+.card h1{
+    margin:20px 50px 0px 10px;
+    text-align:center;
+    font-size:30px;
+}
+.card p{
+    text-align:center;
+    margin:10px 50px 10px 10px;
+    font-size:40px;
+}
+#_1{
+    
+    color:white;
+    background: -webkit-linear-gradient(to right, #7f00ff, #e100ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7f00ff, #e100ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#_2{
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    
+}
+#_3{
+background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    
+}
+#_4{
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+}
+#_5{
+background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    
+}
+#_6{
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+}
+marquee{
+    color:white;
+    font-size:20px;
+}
+.theme{
+    margin:auto;
+    margin-left:100%;
+    margin-right:20%;
+
+}
+
+.btn{
+    height:35px;
+    width:180px;
+    margin-right:0%;
+    border-radius:5px;
+    border:2px solid grey;
+    background-color:black;
+    outline:none;
+    cursor:pointer;
+    
+}
+.btn a{
+    text-decoration:none;
+    color:white;
+}
+.btn:hover {
+    opacity:0.7;
+  }
+.info :hover{
+    color:red;
+
+}
+
+@media only screen and (max-width: 550px)
+{
+    .header h1{
+        font-size:45px;
+    }
+
+}
