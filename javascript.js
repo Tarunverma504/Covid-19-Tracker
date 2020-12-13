@@ -5,7 +5,7 @@ function countryNames(){
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4 & xhr.status==200){
             var data=JSON.parse(xhr.responseText);
-            console.log(data.Global);
+           // console.log(data.Global);
             document.getElementById("NewConfirmed").innerHTML=data.Global.NewConfirmed;
             document.getElementById("NewConfirmed").style.color="red";
 
@@ -66,11 +66,11 @@ document.getElementById("list").addEventListener('click',function(event){
     document.getElementById('find').value=country;
     document.getElementById('result').style.visibility='hidden';  // var num=country.indexOf("(");
                                                                  //country=country.substring(0,num).trim();
-    console.log(country);
+    //console.log(country);
     var i=0;    
     for(i in names)
     {
-        console.log(typeof(country));
+      //  console.log(typeof(country));
         if(country === names[i])
         {
             console.log("sanbxss");
@@ -80,15 +80,15 @@ document.getElementById("list").addEventListener('click',function(event){
         }
     }
     load(i);
-    console.log(names[i]);
+    //console.log(names[i]);
 })
 function load(i){
     var xhr=new XMLHttpRequest();   /// seocnd request
     xhr.onreadystatechange=function(){
         if(xhr.readyState==4 & xhr.status==200){
             var data=JSON.parse(xhr.responseText);
-            console.log(data.Countries[i]);
-            console.log(data);
+           // console.log(data.Countries[i]);
+            //console.log(data);
 
             document.getElementById("_11").innerHTML=data.Countries[i].NewConfirmed;
             document.getElementById("_22").innerHTML=data.Countries[i].NewDeaths;
